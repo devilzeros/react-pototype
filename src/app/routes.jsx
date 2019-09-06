@@ -2,6 +2,7 @@ import React from 'react';
 
 
 const HomePage = React.lazy(() => import('../pages/Home'));
+const HomeDetail = React.lazy(() => import('../pages/Home/detail'));
 
 // const AboutPage = React.lazy(() => import('./views/AboutPage'));
 // const BlogsPage = React.lazy(() => import('./views/BlogsPage'));
@@ -21,7 +22,7 @@ const routes = [
   // { path: '/market', exact: true, name: 'market', component: MarketPage },
   // { path: '/space',  exact: true, name: 'space', component: SpacePage },
   
-  { path: '/home/:id', exact: true, name: 'blogs list', component: HomePage },
+  { path: '/home/:id', exact: true, name: 'blogs list', component: HomeDetail },
   // { path: '/blogs/:id', exact: true, name: 'blogs list', component: BlogsPage },
   // { path: '/events/:id', exact: true, name: 'events list', component: EventsPage },
   // { path: '/market/:id', exact: true, name: 'market list', component: MarketPage },
